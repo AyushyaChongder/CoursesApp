@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">coursesApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_courses">Courses</string>
+    <string name="title_watchlist">Watchlist</string>
+    <string name="title_profile">Profile</string>
+</resources>
