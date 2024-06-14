@@ -718,6 +718,8 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/exploreCourses"
                 android:layout_width="381dp"
@@ -728,210 +730,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/heroArea">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/upscCourse"
-                    android:layout_width="175dp"
-                    android:layout_height="89dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/rounded_card"
-                    android:backgroundTint="#CFE0FF"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCourses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/isroCourse"
-                    app:layout_constraintTop_toBottomOf="@+id/gateCourse">
-
-                    <ImageView
-                        android:id="@+id/cardimg4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/courseimg4"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/cardCourse4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="40dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="UPSC"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/cardSub4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:text="2.4K Enrolled"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cardCourse4"
-                        app:layout_constraintVertical_bias="0.0" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/isroCourse"
-                    android:layout_width="175dp"
-                    android:layout_height="89dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/rounded_card"
-                    android:backgroundTint="#E6D0FF"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btechCourse"
-                    app:layout_constraintVertical_bias="0.29">
+                    app:layout_constraintTop_toBottomOf="@id/exploreText" />
 
-                    <ImageView
-                        android:id="@+id/cardimg3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/courseimg3"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/cardCourse3"
-                        android:layout_width="46dp"
-                        android:layout_height="22dp"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="ISRO"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.2"
-                        app:layout_constraintStart_toEndOf="@+id/cardimg3"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/cardSub3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="2.4K Enrolled"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.473"
-                        app:layout_constraintStart_toEndOf="@+id/cardimg3"
-                        app:layout_constraintTop_toBottomOf="@+id/cardCourse3"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/gateCourse"
-                    android:layout_width="175dp"
-                    android:layout_height="89dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/rounded_card"
-                    android:backgroundTint="#D9EADA"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.589"
-                    app:layout_constraintStart_toEndOf="@+id/btechCourse"
-                    app:layout_constraintTop_toBottomOf="@+id/seeAll1">
-
-                    <TextView
-                        android:id="@+id/cardSub2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="2.4K Enrolled"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/cardimg2"
-                        app:layout_constraintTop_toBottomOf="@+id/cardCourse2"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                    <ImageView
-                        android:id="@+id/cardimg2"
-                        android:layout_width="86dp"
-                        android:layout_height="92dp"
-                        android:src="@drawable/courseimg2"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                    <TextView
-                        android:id="@+id/cardCourse2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="GATE"
-                        android:textColor="#000000"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@+id/cardimg2"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/btechCourse"
-                    android:layout_width="175dp"
-                    android:layout_height="89dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/rounded_card"
-                    android:backgroundTint="#FFE5D2"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/courseText">
-
-                    <ImageView
-                        android:id="@+id/cardimg1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/courseimg1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/cardCourse1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="B.tech"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.27"
-                        app:layout_constraintStart_toEndOf="@+id/cardimg1"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/cardSub1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="sans-serif"
-                        android:text="50K Enrolled"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.526"
-                        app:layout_constraintStart_toEndOf="@+id/cardimg1"
-                        app:layout_constraintTop_toBottomOf="@+id/cardCourse1"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 <TextView

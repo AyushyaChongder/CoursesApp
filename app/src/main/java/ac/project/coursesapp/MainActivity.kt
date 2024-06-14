@@ -34,12 +34,12 @@ class MainActivity : AppCompatActivity() {
         setupWithNavController(binding!!.navView, navController)
 
         // Find the ConstraintLayout for the B.tech course
-        val btechCourseLayout = findViewById<ConstraintLayout>(R.id.btechCourse)
-
-        // Set OnClickListener for the B.tech course layout
-        btechCourseLayout.setOnClickListener { // Handle click event here, for example, start a new activity
-            val intent = Intent(this@MainActivity, BtechCoursesActivity::class.java)
-            startActivity(intent)
-        }
+//        val btechCourseLayout = findViewById<ConstraintLayout>(R.id.btechCourse)
+//
+//        // Set OnClickListener for the B.tech course layout
+//        btechCourseLayout.setOnClickListener { // Handle click event here, for example, start a new activity
+//            val intent = Intent(this@MainActivity, BtechCoursesActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }
